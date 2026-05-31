@@ -2,7 +2,7 @@
 
 An end-to-end, production-grade machine learning application designed to predict residential real estate market values across regional Indian tier-1 tech hubs and metropolitan zones. 
 
-🚀 **[Insert Live App URL Link Here Once Deployed]**
+🚀 https://house-price-predictor-ffzgaejspv64soyup9uxc4.streamlit.app/
 
 ---
 
