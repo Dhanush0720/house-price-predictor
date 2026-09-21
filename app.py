@@ -11,6 +11,13 @@ import matplotlib.pyplot as plt
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
 import preprocessing  # Ensures custom transformers like RealEstateFeatureEngineer are registered
 
+# Fix unpickling issue across platforms/versions where CyHalfSquaredError references '_loss'
+try:
+    import sklearn._loss._loss as _loss_module
+    sys.modules['_loss'] = _loss_module
+except Exception:
+    pass
+
 # Set up page styling
 st.set_page_config(page_title="Indian Real Estate Predictor", page_icon="🏡", layout="centered")
 
