@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 
 # Tell Python to look inside the 'src' directory for modules
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
+import preprocessing  # Ensures custom transformers like RealEstateFeatureEngineer are registered
 
 # Set up page styling
 st.set_page_config(page_title="Indian Real Estate Predictor", page_icon="🏡", layout="centered")
